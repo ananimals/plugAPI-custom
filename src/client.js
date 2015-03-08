@@ -1003,7 +1003,6 @@ function PerformLoginCredentials(callback) {
         }, function(err, res, data) {
             if (data.status !== 'ok') {
                 logger.error('LOGIN ERROR: ' + data.status);
-                process.exit(1);
             } else {
                 _cookies.fromHeaders(res.headers);
                 _cookies.save();

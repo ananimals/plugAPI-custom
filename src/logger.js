@@ -37,7 +37,7 @@ function Logger(channel) {
     var settings = {
         fileOutput: false,
         filePath: '',
-        consoleOutput: true
+        consoleOutput: false
     };
 
     function createLogFunc(level) {
